@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct ProfileView: View {
-    var body: some View {
-		VStack {
-			
-		}
-		.navigationTitle("Profile")
-    }
-}
+	@StateObject var viewModel = ProfileViewViewModel()
+	
+	var body: some View {
+		NavigationView {
+			VStack {
+				
+			}
+			.navigationTitle("Profile")
+		} //nav view
+	} //body
+} //struct
 
 #Preview {
     ProfileView()
